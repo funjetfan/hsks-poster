@@ -1,0 +1,9 @@
+[0] Config.pm:324> INFO - This is Biber 2.1
+[1] Config.pm:327> INFO - Logfile is 'daposterifn.blg'
+[224] biber-MSWIN:273> INFO - === %a %b %e, %Y, %H:%M:%S
+[225] Biber.pm:333> INFO - Reading 'daposterifn.bcf'
+[765] Biber.pm:645> INFO - Found 0 citekeys in bib section 0
+[765] Utils.pm:146> WARN - The file 'daposterifn.bcf' does not contain any citations!
+[905] bbl.pm:505> INFO - Writing 'daposterifn.bbl' with encoding 'latin1'
+[911] bbl.pm:596> INFO - Output to daposterifn.bbl
+[911] Biber.pm:106> INFO - WARNINGS: 1

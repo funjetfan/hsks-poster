@@ -131,7 +131,9 @@
 	sum/.style      = {draw, circle, node distance = 1cm}, % Adder
 	input/.style    = {coordinate}, % Input
 	output/.style   = {coordinate} % Output
+	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny}, small dot/.style={fill=black,circle,scale=0.3}
 }
+
 
 % Defining string as labels of certain blocks.
 \newcommand{\suma}{\Large$+$}
@@ -232,33 +234,34 @@ Die Struktur des Modells, wie es hier verwendet wird, ist in Abbildung \ref{fig:
 %-------------------------------------------------
 \section*{Analyse}
 
-Zur Parametrisierung des in \ref{fig:QFM} dargestellten Modells m\"ussen reale Sprachsignale analysiert werden.
+Zur Parametrisierung des in Abbildung \ref{fig:QFM} dargestellten Modells m\"ussen reale Sprachsignale analysiert werden.
 
 Der Schwerpunkt liegt hierbei auf der Bestimmung der Filterparameter. Es werden prim\"ar Bandpassfilter 2. Ordnung eingesetzt. Die drei charakteristischen Parameter sind Mittenfrequenz, Bandbreite und Grundverst\"arkung.
 
-Die Mittenfrequenz wird als Formantfrequenz. Um diese zu bestimmen, wurden verschiedene Analysemethoden verwendet. Von der Software Praat wurde der fertig implementierte Burg-Algorithmus bereitgestellt, selbst nachprogrammiert wurde der Cepstrum-Algorithmus. Au{\ss}erdem wurden die Formantfrequenzen manuell aus dem Spektrum abgelesen, wie in Abbildung \ref{fig:spektrum} dargestellt.
+Die Mittenfrequenz wird als Formantfrequenz bezeichnet. Um diese zu bestimmen, wurden verschiedene Analysemethoden verwendet. Von der Software Praat wurde der fertig implementierte Burg-Algorithmus bereitgestellt, selbst nachprogrammiert wurde der Cepstrum-Algorithmus. Das dabei gewonnene gegl\"attete Spektrum ist in Abbildung \ref{fig:spektrum} dargestellt.
 
-Die 
 
-\begin{figure}
-%	\input{as\"olkdjfa\"oskldjfa\"oskljdfa\"oskljdf}
-	\caption{Spektrum des Vokals ...}
+
+\begin{figure}[H]
+	\centering
+	\input{figures/analyse/a-amplitude.tex}
+	\caption{Spektrum des Vokals a}
 	\label{fig:spektrum}
 \end{figure}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam $c = \sqrt{a^2 + b^2}$, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-\begin{alignat*}{1}
-	y = \sum_{i=1}^{M} \left[ c_i \, \frac{x_i - \alpha}{1 + \prod_{j=1}^{M} r_{i,j} x_i} + \max \{ \theta_i, \sigma^2 \} \right]
-\end{alignat*}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 
 
 %-------------------------------------------------
-\subsubsection*{Unter\"uberschrift Ebene 3}
+\section*{Synthese}
 
-\blindtext[1]
+\subsection*{Vokallaute}
+Folgende Filterstruktur wird zur Synthese von Vokallauten genutzt:
 
+\begin{figure}[H]
+	\centering
+	\input{figures/Synthese/qfm-vokale.tex}
+	\caption{Quelle-Filter-Modell f\"ur Vokallaute}
+	\label{fig:qfm-vokal}
+\end{figure}
 
 %-------------------------------------------------
 \subsubsection*{Unter\"uberschrift Ebene 3}
