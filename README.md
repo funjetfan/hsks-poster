@@ -1,1 +1,0 @@
-# hsks-poster

@@ -14,8 +14,8 @@
 %###############################################################################
 % REQUIRED PACKAGES
 %###############################################################################
-\RequirePackage[latin1]{inputenc}
-\RequirePackage[T1]{fontenc}
+%\RequirePackage[latin1]{inputenc}
+%\RequirePackage[T1]{fontenc}
 \RequirePackage[english,ngerman]{babel}
 
 \RequirePackage{geometry}

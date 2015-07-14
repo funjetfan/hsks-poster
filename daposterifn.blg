@@ -1,9 +1,15 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [1] Config.pm:327> INFO - Logfile is 'daposterifn.blg'
-[224] biber-MSWIN:273> INFO - === %a %b %e, %Y, %H:%M:%S
-[225] Biber.pm:333> INFO - Reading 'daposterifn.bcf'
-[765] Biber.pm:645> INFO - Found 0 citekeys in bib section 0
-[765] Utils.pm:146> WARN - The file 'daposterifn.bcf' does not contain any citations!
-[905] bbl.pm:505> INFO - Writing 'daposterifn.bbl' with encoding 'latin1'
-[911] bbl.pm:596> INFO - Output to daposterifn.bbl
-[911] Biber.pm:106> INFO - WARNINGS: 1
+[103] biber-MSWIN:273> INFO - === %a %b %e, %Y, %H:%M:%S
+[104] Biber.pm:333> INFO - Reading 'daposterifn.bcf'
+[624] Biber.pm:642> INFO - Using all citekeys in bib section 0
+[666] Biber.pm:2977> INFO - Processing section 0
+[925] Biber.pm:3115> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[934] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[938] bibtex.pm:895> INFO - Found BibTeX data source 'literatur.bib'
+[1055] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1056] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1056] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[1056] Biber.pm:2858> INFO - No sort tailoring available for locale 'de-DE'
+[1061] bbl.pm:505> INFO - Writing 'daposterifn.bbl' with encoding 'UTF-8'
+[1076] bbl.pm:596> INFO - Output to daposterifn.bbl

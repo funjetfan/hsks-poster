@@ -7,7 +7,7 @@
 %* extern
 
 %%% LANGUAGE %%%
-\usepackage[T1]{fontenc}      % correct german hyphenation of word with umlaute
+%\usepackage[T1]{fontenc}      % correct german hyphenation of word with umlaute
 \usepackage{babel}
 %\usepackage[latin1]{inputenc} % direct use of german umlaute, utf8 encoding
 
@@ -206,7 +206,7 @@ Mit dieser Thematik besch\"aftigten sich Forscher schon seit mehreren Jahrhunder
 
 \begin{figure}[H]
 	\includegraphics[width = .25\textwidth]{figures/Einleitung/kratzenstein.png}
-	\caption{Kratzensteins Resonator, Quelle: }
+	\caption{Kratzensteins Resonator \cite[S. 5]{lemmetty1999review} }
 	\label{fig:kratzenstein}
 \end{figure}
 --> Hier eine Grafik einf\"ugen - wie macht und zitiert man das richtig? <--
@@ -231,6 +231,12 @@ Die Struktur des Modells, wie es hier verwendet wird, ist in Abbildung \ref{fig:
 \end{figure}
 
 
+Aenean ac nulla ipsum. Sed nulla dui, consectetur sit amet ultrices eget, semper nec ipsum. Pellentesque lacinia ornare sapien, ac accumsan nulla congue eget. Aliquam gravida nulla id justo egestas accumsan.
+
+Aenean ac nulla ipsum. Sed nulla dui, consectetur sit amet ultrices eget, semper nec ipsum. Pellentesque lacinia ornare sapien, ac accumsan nulla congue eget. Aliquam gravida nulla id justo egestas accumsan.
+
+
+
 %-------------------------------------------------
 \section*{Analyse}
 
@@ -244,8 +250,8 @@ Die Mittenfrequenz wird als Formantfrequenz bezeichnet. Um diese zu bestimmen, w
 
 \begin{figure}[H]
 	\centering
-	\input{figures/analyse/a-amplitude.tex}
-	\caption{Spektrum des Vokals a}
+	\input{figures/analyse/i-amplitude.tex}
+	\caption{Spektrum des Vokals i}
 	\label{fig:spektrum}
 \end{figure}
 
@@ -253,8 +259,25 @@ Die Mittenfrequenz wird als Formantfrequenz bezeichnet. Um diese zu bestimmen, w
 %-------------------------------------------------
 \section*{Synthese}
 
+Zur Synthese von Einzellauten werden verschiedene Quelle-Filter-Modelle verwendet. Nachfolgend sind zwei Beispiele dargestellt. Einmal wird zur Realisierung eine Kaskadenstruktur verwendet, einmal eine Parallelstruktur.
+
 \subsection*{Vokallaute}
-Folgende Filterstruktur wird zur Synthese von Vokallauten genutzt:
+Zur Synthese von Vokallauten wird ein periodisches breitbandiges Anregungssignal als Quelle verwendet. Die Signalformung wird mittels Bandpassfilter in Reihenschaltung realisiert.
+
+
+Das Anregungssignal f\"ur die stimmhaften Laute soll den glottalen Luftstrom nachbilden. Dazu wurde die von Paul Taylor vorgeschlagene Formel benutzt %\cite[S. 331, Gleichung (11.30)]{TaylorTTS}:
+\begin{equation}
+\label{eq:sourcesignal}
+u[n]=\begin{cases}
+\frac{1}{2}(1-\cos(\pi n/N_1)) & 0\leq n\leq N_1\\
+\cos(\pi(n-N_1)/(2N_2)) & N_1\leq n\leq N_2\\
+0 & \mathrm{sonst}
+\end{cases}
+\end{equation}
+
+
+
+Eine Filterstruktur nach Abbildung \ref{fig:qfm-vokal} wird zur Synthese von Vokallauten genutzt.
 
 \begin{figure}[H]
 	\centering
@@ -263,50 +286,39 @@ Folgende Filterstruktur wird zur Synthese von Vokallauten genutzt:
 	\label{fig:qfm-vokal}
 \end{figure}
 
-%-------------------------------------------------
-\subsubsection*{Unter\"uberschrift Ebene 3}
+Beispielhaft ist das Spektrum f\"ur den synthetisierten Vokal \enquote{i} in Abbildung \ref*{fig:spektr-synt-i} dargestellt.
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-\begin{itemize}
-	\item Ut ornare est ac arcu molestie sed porttitor.
-	\item Aliquam ultricies sollicitudin quam.
-	\item Nunc porta placerat arcu, ac bibendum massa adipiscing id. Nulla facilisi.
-				Vivamus a arcu ut urna vehicula rhoncus quis vel lectus.
-	\item Nullam ornare, sem dictum mollis dictum, ante nulla sollicitudin nunc, in dictum mauris tellus nec dolor. 
-\end{itemize}
-
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-
-\begin{center}
-	\includegraphics[width=\linewidth]{./figures/abbildung}
-	\captionof{figure}{Unterschrift f\"ur Abbildung.\label{fig:abbildung}}
-\end{center}
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-
-\begin{center}
-	\begin{tabularx}{\linewidth}{|l|X|X|}
-	  \hline
-		jdffdslf & fjdsf jhg lkjgljfdlg jfdj jrgjfdkgeag & jfdfjwgr igjirejg \\ \hline
-		ejperg   & jgjk rpe jbhpets jpgfg                & gkfdl gh jthjp trhks tpsjrst\"aj trjs js irithjmn \\ \hline
-	\end{tabularx}
-	\captionof{table}{Unterschrift f\"ur Tabelle.\label{tab:tabelle}}
-\end{center}
-
+\begin{figure}[H]
+	\centering
+	\input{figures/Synthese/spektrum-i-3.tex}
+	\caption{Spektrum des synthetisierten Vokals i}
+	\label{fig:spektr-synt-i}
+\end{figure}
 
 %-------------------------------------------------
-\subsection*{Unter\"uberschrift Ebene 2}
+\subsection*{Zischlaute}
 
-Donec fringilla rhoncus dolor et pretium. Donec non neque eget mi imperdiet porttitor. Nulla facilisi. Ut porta justo nec tortor sollicitudin in elementum sem lobortis. Sed non cursus nunc. Morbi ac felis mollis dolor pulvinar ullamcorper id nec dui. Sed id nibh magna, sit amet laoreet elit.
-\begin{enumerate}
-	\item Duis adipiscing venenatis risus, et condimentum risus commodo nec.
-	\item Quisque ut leo quis leo porta pellentesque ut sit amet leo. Phasellus quis pharetra nisl.
-	\item Fusce imperdiet rhoncus ante, sed iaculis elit euismod vel.
-\end{enumerate}
-Aenean ac nulla ipsum. Sed nulla dui, consectetur sit amet ultrices eget, semper nec ipsum. Pellentesque lacinia ornare sapien, ac accumsan nulla congue eget. Aliquam gravida nulla id justo egestas accumsan.
+Zur Synthese von Zischlauten wird ein Rauschgenerator als Quelle verwendet. Die Signalformung wird mittels Bandpassfilter in Parallelschaltung realisiert. Eine Filterstruktur nach Abbildung \ref{fig:qfm-zisch} wird zur Synthese von Zischlauten verwendet.
 
-Vestibulum convallis malesuada faucibus. Vestibulum ligula turpis, venenatis vel gravida at, eleifend eget tortor. Phasellus blandit nisi vel leo euismod a vestibulum est vestibulum. Duis convallis dignissim turpis. Nam ullamcorper molestie urna et iaculis.
+\begin{figure}[H]
+	\centering
+	\input{figures/Synthese/qfm-zisch.tex}
+	\caption{Quelle-Filter-Modell f\"ur Zischlaute}
+\label{fig:qfm-zisch}
+\end{figure}
+
+%-------------------------------------------------
+\subsection*{Kombination}
+
+Bei der Lautkombination werden einzelne Laute gefenstert und ineinander verschoben. Als Fensterfunktion wird ein Von-Hann-Fenster verwendet. Die Verschiebung zweier Fenster ist beispielhaft in Abbildung \ref{fig:kombination} abgebildet.
+
+\begin{figure}[H]
+	\centering
+	\input{figures/Synthese/alpha1.tex}
+	\caption{\"Uberlappung zweier Von-Hann-Fenster}
+	\label{fig:kombination}
+\end{figure}
+
 
 
 %-------------------------------------------------
@@ -314,14 +326,13 @@ Vestibulum convallis malesuada faucibus. Vestibulum ligula turpis, venenatis vel
 %-------------------------------------------------
 
 Aenean ac nulla ipsum. Sed nulla dui, consectetur sit amet ultrices eget, semper nec ipsum. Pellentesque lacinia ornare sapien, ac accumsan nulla congue eget. Aliquam gravida nulla id justo egestas accumsan.
+
 Vestibulum convallis malesuada faucibus. Vestibulum ligula turpis, venenatis vel gravida at, eleifend eget tortor. Phasellus blandit nisi vel leo euismod a vestibulum est vestibulum. Duis convallis dignissim turpis. Nam ullamcorper molestie urna et iaculis.
 
-\blindtext[1]
-
-\blindtext[1]
+\nocite{*}
+\printbibliography
 
 
 \end{multicols}
-
 
 \end{document}

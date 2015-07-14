@@ -16,5 +16,40 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{lemmetty1999review}{article}{}
+      \name{author}{1}{}{%
+        {{hash=87b3b2cbc637ed9c94f0ec932e299e25}{Lemmetty}{L\bibinitperiod}{Sami}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{87b3b2cbc637ed9c94f0ec932e299e25}
+      \strng{fullhash}{87b3b2cbc637ed9c94f0ec932e299e25}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Helsinki University of Technology}
+      \field{title}{Review of speech synthesis technology}
+      \field{year}{1999}
+    \endentry
+    \entry{TaylorTTS}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ae655fd42e32ec4680609d16443509d2}{Taylor}{T\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{ae655fd42e32ec4680609d16443509d2}
+      \strng{fullhash}{ae655fd42e32ec4680609d16443509d2}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Text-to-speech synthesis}
+      \field{year}{2009}
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 
