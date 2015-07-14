@@ -1,0 +1,11 @@
+\begin{tikzpicture}[auto, thick, node distance=2cm, >=triangle 45]
+\draw
+% Block setzen
+node at (-1,0)[elipse](input) {Quelle} 
+node at (3,0)[block] (filter) {Filter}
+node at (7.5,0)[output, right = -3mm] (output){\textopenbullet};
+% Block verbinden
+\draw[->](input) -- node {}(filter);
+\draw[->](filter) -- node {Ausgang}(output);
+
+\end{tikzpicture}
