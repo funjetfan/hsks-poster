@@ -55,7 +55,7 @@
 	\renewcommand{\daposterContentChair}{Lehrstuhl Kognitive Systeme}
 	\renewcommand{\includeChairLogo}{%
 		\includegraphics[height=\daposterLayoutScaleLogoFoot\daposterLayoutHoeheFussbalken]
-		{./figures/logos/Logo-ET_weiss}}
+		{./figures/logos/KogSys}}
 }
 %* chair Elektroakustik *******************************************************************
 \DeclareOption{ea}{
