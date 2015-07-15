@@ -425,12 +425,12 @@
 	{\bfseries\daposterLayoutFontSizeDAStudent%
 	\daposterContentDAStudent}
 	
-	\vfill
+	\vfil
 		
-	\begin{tabular}{p{0.35\textwidth}p{0.35\textwidth}}
-			Betreuer: & Hochschullehrer: \\ 
-			PD Dr.-Ing. Ulrich Kordon & Jun.-Prof. Dr.-Ing. Peter Birkholz \\ 
-			Dipl.-Ing. Steffen K\"urbis &  \\ 
+	\begin{tabular}{m{0.35\textwidth}m{0.35\textwidth}m{0.35\textwidth}}
+			{\centering Betreuer:} &{\centering  Hochschullehrer:} & {\centering Verteidigungsdatum:} \\ 
+			{\centering PD Dr.-Ing. Ulrich Kordon} & {\centering Jun.-Prof. Dr.-Ing. Peter Birkholz} & {\centering 14.07.2015}  \\ 
+			{\centering Dipl.-Ing. Steffen K\"urbis} &  & \\ 
 		\end{tabular} 
 
 %	\hfill

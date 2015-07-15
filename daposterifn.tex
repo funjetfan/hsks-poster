@@ -199,7 +199,7 @@
 \section*{Einleitung}
 %-------------------------------------------------
 
-Im Hauptseminars Kommunikationssysteme wurde das Thema \enquote{Synthese von Sprachsignalen} bearbeitet. Der Fokus lag auf der Erzeugung von Sprachsignalen mittels Formantsynthese. Diese wurde in einem Computerprogramm durch ein Quelle-Filter-Modell realisiert.
+Im Hauptseminar Kommunikationssysteme wurde das Thema \enquote{Synthese von Sprachsignalen} bearbeitet. Der Fokus lag auf der Erzeugung von Sprachsignalen mittels Formantsynthese. Diese wurde in einem Computerprogramm durch ein Quelle-Filter-Modell realisiert.
 Zur Parameterbestimmung war eine vorherige Analyse realer Sprache notwendig.
 
 Mit dieser Thematik besch\"aftigten sich Forscher schon seit mehreren Jahrhunderten.
@@ -230,11 +230,6 @@ Die Struktur des Modells, wie es hier verwendet wird, ist in Abbildung \ref{fig:
 \end{figure}
 
 
-Aenean ac nulla ipsum. Sed nulla dui, consectetur sit amet ultrices eget, semper nec ipsum. Pellentesque lacinia ornare sapien, ac accumsan nulla congue eget. Aliquam gravida nulla id justo egestas accumsan.
-
-Aenean ac nulla ipsum. Sed nulla dui, consectetur sit amet ultrices eget, semper nec ipsum. Pellentesque lacinia ornare sapien, ac accumsan nulla congue eget. Aliquam gravida nulla id justo egestas accumsan.
-
-
 
 %-------------------------------------------------
 \section*{Analyse}
@@ -244,50 +239,43 @@ Zur Parametrisierung des in Abbildung \ref{fig:QFM} dargestellten Modells m\"uss
 Der Schwerpunkt liegt hierbei auf der Bestimmung der Filterparameter. Es werden prim\"ar Bandpassfilter 2. Ordnung eingesetzt. Die drei charakteristischen Parameter sind Mittenfrequenz, Bandbreite und Grundverst\"arkung.
 
 Die Mittenfrequenz wird als Formantfrequenz bezeichnet. Um diese zu bestimmen, wurden verschiedene Analysemethoden verwendet. Von der Software Praat wurde der fertig implementierte Burg-Algorithmus bereitgestellt, selbst nachprogrammiert wurde der Cepstrum-Algorithmus. Das dabei gewonnene gegl\"attete Spektrum ist in Abbildung \ref{fig:spektrum} dargestellt.
-
-
-
+{
+	%\setlength{cmd}{len}
 \begin{figure}[H]
 	\centering
 	\input{figures/analyse/i-amplitude.tex}
-	\caption{Spektrum des Vokals i}
+	\caption{Gegl\"attetes Spektrum des Vokals i}
 	\label{fig:spektrum}
 \end{figure}
-
+}
 
 %-------------------------------------------------
 \section*{Synthese}
 
-Zur Synthese von Einzellauten werden verschiedene Quelle-Filter-Modelle verwendet. Nachfolgend sind zwei Beispiele dargestellt. Einmal wird zur Realisierung eine Kaskadenstruktur verwendet, einmal eine Parallelstruktur.
+Zur Synthese von Einzellauten werden verschiedene Quelle-Filter-Modelle verwendet.
 
-\subsection*{Vokallaute}
+\subsection*{Synthetisierbare Einzellaute}
+Implementiert wurden folgende Laute: Vokale, Diphtonge (/au/, /ei/, /eu/), stimmlose Frikative (/ch/, /f/, /s/, /sch/), stimmhafte Frikative (/w/), stimmhafte Plosive (/b/, /d/, /g/), stimmlose Plosive (/k/, /t/, /p/), Liquide (/l/, /r/) sowie Nasale (/m/, /n/).
+
+Allerdings k\"onnen stimmhafte Plosive nur in Verbindung mit einem darauffolgenden Vokal synthetisiert werden.
+
+\subsection*{Vokale}
 Zur Synthese von Vokallauten wird ein periodisches breitbandiges Anregungssignal als Quelle verwendet. Die Signalformung wird mittels Bandpassfilter in Reihenschaltung realisiert.
 
 
-Das Anregungssignal f\"ur die stimmhaften Laute soll den glottalen Luftstrom nachbilden. Dazu wurde die von Paul Taylor vorgeschlagene Formel benutzt %\cite[S. 331, Gleichung (11.30)]{TaylorTTS}:
-\begin{equation}
-\label{eq:sourcesignal}
-u[n]=\begin{cases}
-\frac{1}{2}(1-\cos(\pi n/N_1)) & 0\leq n\leq N_1\\
-\cos(\pi(n-N_1)/(2N_2)) & N_1\leq n\leq N_2\\
-0 & \mathrm{sonst}
-\end{cases}
-\end{equation}
+Das Anregungssignal f\"ur die stimmhaften Laute soll den glottalen Luftstrom nachbilden. Dazu wurde eine von Paul Taylor vorgeschlagene Formel benutzt.
 
-
-
-Eine Filterstruktur nach Abbildung \ref{fig:qfm-vokal} wird zur Synthese von Vokallauten genutzt.
 
 \begin{figure}[H]
 	\centering
-	\input{figures/Synthese/qfm-vokale.tex}
-	\caption{Quelle-Filter-Modell f\"ur Vokallaute}
+	\input{figures/Synthese/sourcesignal.tex}
+	\caption{Anregungssignal f\"ur stimmhafte Laute}
 	\label{fig:qfm-vokal}
 \end{figure}
 
-Beispielhaft ist das Spektrum f\"ur den synthetisierten Vokal \enquote{i} in Abbildung \ref*{fig:spektr-synt-i} dargestellt.
+Beispielhaft ist das Spektrum f\"ur den synthetisierten Vokal /{i}/ in Abbildung \ref*{fig:spektr-synt-i} dargestellt.
 
-\begin{figure}[H]
+\begin{figure}[H]	
 	\centering
 	\input{figures/Synthese/spektrum-i-3.tex}
 	\caption{Spektrum des synthetisierten Vokals i}
@@ -295,21 +283,22 @@ Beispielhaft ist das Spektrum f\"ur den synthetisierten Vokal \enquote{i} in Abb
 \end{figure}
 
 %-------------------------------------------------
-\subsection*{Zischlaute}
+\subsection*{Frikative}
 
-Zur Synthese von Zischlauten wird ein Rauschgenerator als Quelle verwendet. Die Signalformung wird mittels Bandpassfilter in Parallelschaltung realisiert. Eine Filterstruktur nach Abbildung \ref{fig:qfm-zisch} wird zur Synthese von Zischlauten verwendet.
+Zur Synthese von Zischlauten wird ein Rauschgenerator als Quelle verwendet. Die Signalformung wird mittels Bandpassfilter in Parallelschaltung realisiert. %Eine Filterstruktur nach Abbildung \ref{fig:qfm-zisch} wird zur Synthese von Zischlauten verwendet.
 
-\begin{figure}[H]
-	\centering
-	\input{figures/Synthese/qfm-zisch.tex}
-	\caption{Quelle-Filter-Modell f\"ur Zischlaute}
-\label{fig:qfm-zisch}
-\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\input{figures/Synthese/qfm-zisch.tex}
+%	\caption{Quelle-Filter-Modell f\"ur Zischlaute}
+%\label{fig:qfm-zisch}
+%\end{figure}
+
 
 %-------------------------------------------------
 \subsection*{Kombination}
 
-Bei der Lautkombination werden einzelne Laute gefenstert und ineinander verschoben. Als Fensterfunktion wird ein Von-Hann-Fenster verwendet. Die Verschiebung zweier Fenster ist beispielhaft in Abbildung \ref{fig:kombination} abgebildet.
+Bei der Lautkombination werden einzelne Laute mit einem Von-Hann-Fenster gefenstert und ineinander verschoben. Die Ineinanderverschiebung ist in Abbildung \ref{fig:kombination} abgebildet.
 
 \begin{figure}[H]
 	\centering
@@ -323,10 +312,9 @@ Bei der Lautkombination werden einzelne Laute gefenstert und ineinander verschob
 %-------------------------------------------------
 \section*{Zusammenfassung}
 %-------------------------------------------------
+Im Rahmen des Hauptseminars wurden Einzellaute und Lautkombinationen analysiert und deren Parameter bestimmt. Dies bildete die Grundlage f\"ur eine anschlie{\ss}ende Synthese von Sprachsignalen.
 
-Aenean ac nulla ipsum. Sed nulla dui, consectetur sit amet ultrices eget, semper nec ipsum. Pellentesque lacinia ornare sapien, ac accumsan nulla congue eget. Aliquam gravida nulla id justo egestas accumsan.
-
-Vestibulum convallis malesuada faucibus. Vestibulum ligula turpis, venenatis vel gravida at, eleifend eget tortor. Phasellus blandit nisi vel leo euismod a vestibulum est vestibulum. Duis convallis dignissim turpis. Nam ullamcorper molestie urna et iaculis.
+Der Sprachsynthesizer wurde in GNU Octave implementiert. Der Benutzer hat die M\"oglichkeit eine Lautkombination zur Synthese einzugeben. Diese wird anschlie{\ss}end als Audiodatei ausgegeben.
 
 \nocite{*}
 \printbibliography

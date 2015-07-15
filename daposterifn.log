@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.7.6)  14 JUL 2015 22:26
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.7.6)  15 JUL 2015 14:27
 **daposterifn.tex
 (./daposterifn.tex
 LaTeX2e <2015/01/01>
@@ -1834,6 +1834,10 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 184.
 ("C:/Program Files (x86)/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Overfull \hbox (85.14871pt too wide) in paragraph at lines 184--184
+ [][][] 
+ []
+
 <figures/Einleitung/kratzenstein.png, id=6, 451.6875pt x 270.25969pt>
 File: figures/Einleitung/kratzenstein.png Graphic file (type png)
 
@@ -1848,70 +1852,57 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 154.
 )
-Overfull \hbox (12.4116pt too wide) in paragraph at lines 155--253
+Overfull \hbox (27.80342pt too wide) in paragraph at lines 155--247
  [][][] 
  []
 
-(./figures/Synthese/qfm-vokale.tex
-LaTeX Font Info:    Calculating math sizes for size <29.86> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <29.86> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.9019> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.93> on input line 5.
-)
-Overfull \hbox (0.58446pt too wide) in paragraph at lines 16--284
+(./figures/Synthese/sourcesignal.tex) (./figures/Synthese/spektrum-i-3.tex)
+Overfull \hbox (15.18666pt too wide) in paragraph at lines 7030--281
  [][][] 
  []
 
-(./figures/Synthese/spektrum-i-3.tex)
-Overfull \hbox (9.30669pt too wide) in paragraph at lines 7030--293
- [][][] 
- []
-
-(./figures/Synthese/qfm-zisch.tex) (./figures/Synthese/alpha1.tex)
-<./figures/logos/Logo-TU_weiss.pdf, id=15, 256.96pt x 75.28125pt>
+(./figures/Synthese/alpha1.tex)
+<./figures/logos/Logo-TU_weiss.pdf, id=13, 256.96pt x 75.28125pt>
 <use ./figures/logos/Logo-TU_weiss.pdf>
 File: ./figures/logos/Logo-TU_weiss.pdf Graphic file (type pdf)
 
 <use ./figures/logos/Logo-TU_weiss.pdf>
-Package pdftex.def Info: ./figures/logos/Logo-TU_weiss.pdf used on input line 33
-7.
+Package pdftex.def Info: ./figures/logos/Logo-TU_weiss.pdf used on input line 32
+5.
 (pdftex.def)             Requested size: 373.94691pt x 109.5437pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 337.
+Package xcolor Warning: Incompatible color definition on input line 325.
 
 
-Package xcolor Warning: Incompatible color definition on input line 337.
+Package xcolor Warning: Incompatible color definition on input line 325.
 
-<./figures/logos/Logo-ET_weiss.pdf, id=16, 249.93375pt x 68.255pt>
+<./figures/logos/Logo-ET_weiss.pdf, id=14, 249.93375pt x 68.255pt>
 File: ./figures/logos/Logo-ET_weiss.pdf Graphic file (type pdf)
 
 <use ./figures/logos/Logo-ET_weiss.pdf>
-Package pdftex.def Info: ./figures/logos/Logo-ET_weiss.pdf used on input line 33
-7.
+Package pdftex.def Info: ./figures/logos/Logo-ET_weiss.pdf used on input line 32
+5.
 (pdftex.def)             Requested size: 237.0391pt x 64.7294pt.
 
-<./figures/logos/KogSys.jpg, id=17, 43.50702pt x 43.50702pt>
+<./figures/logos/KogSys.jpg, id=15, 43.50702pt x 43.50702pt>
 File: ./figures/logos/KogSys.jpg Graphic file (type jpg)
 
 <use ./figures/logos/KogSys.jpg>
-Package pdftex.def Info: ./figures/logos/KogSys.jpg used on input line 337.
+Package pdftex.def Info: ./figures/logos/KogSys.jpg used on input line 325.
 (pdftex.def)             Requested size: 64.73921pt x 64.7294pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 337.
+Package xcolor Warning: Incompatible color definition on input line 325.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 337.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 337.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 337.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 337.
+(babel)             in language  on input line 325.
 [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1926,11 +1917,11 @@ Non-PDF special ignored!
 Non-PDF special ignored!<./figures/logos/Logo-TU_weiss.pdf><./figures/Einleitung
 /kratzenstein.png><./figures/logos/Logo-ET_weiss.pdf><./figures/logos/KogSys.jpg
 >]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 337.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
  (./daposterifn.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 337.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 Package rerunfilecheck Info: File `daposterifn.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'daposterifn.run.xml'.
@@ -1939,28 +1930,25 @@ Package logreq Info: Writing requests to 'daposterifn.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42168 strings out of 494695
- 244172,2848258 words of node,token memory allocated
- 472 words of node memory still in use:
+ 42064 strings out of 494695
+ 244169,2848258 words of node,token memory allocated
+ 462 words of node memory still in use:
     nodes
-   avail lists: 1:3,2:52,3:20653,4:7273,5:764,6:15926,7:142,8:82,9:2516,10:2262
- 44107 multiletter control sequences out of 65536+200000
- 72 fonts using 2023067 bytes
- 61i,27n,84p,1155b,2051s stack positions out of 5000i,500n,10000p,258539b,50000s
+   avail lists: 1:7,2:51,3:28647,4:6760,5:650,6:12817,7:111,8:65,9:2268,10:1806
+ 44031 multiletter control sequences out of 65536+200000
+ 54 fonts using 1520507 bytes
+ 61i,27n,84p,1155b,2062s stack positions out of 5000i,500n,10000p,258873b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program File
-s (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKT
-eX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts
-/enc/dvips/lm/lm-mathit.enc}<<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmex10.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi1
-2.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><<C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><<C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><<C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/lm/lmss17.pfb><<C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/lm/lmssbx10.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmsy10.pfb>
-Output written on daposterifn.pdf (1 page, 323111 bytes).
+s (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKT
+eX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<<C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/lm/lmmi12.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmr17.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri1
+2.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><<C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><<C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
+Output written on daposterifn.pdf (1 page, 306143 bytes).
 
-PDF statistics: 87 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 131072)
+PDF statistics: 75 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
