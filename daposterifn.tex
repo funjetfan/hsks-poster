@@ -23,6 +23,7 @@
 \usepackage{xcolor}    % colored elements, extended package
 \usepackage{pgfplots}
 \usepackage{tikz}
+\usepackage{epstopdf}
 
 %%% MATH & SCIENCE %%%
 \usepackage{amsmath}   % math formulae
@@ -206,7 +207,7 @@ Mit dieser Thematik besch\"aftigten sich Forscher schon seit mehreren Jahrhunder
 
 \begin{figure}[H]
 	\includegraphics[width = .25\textwidth]{figures/Einleitung/kratzenstein.png}
-	\caption{von Kempelen's Sprachmaschine \cite[S. 5]{lemmetty1999review} }
+	\caption{Von Kempelen's Sprachmaschine \cite[S. 5]{lemmetty1999review} }
 	\label{fig:kratzenstein}
 \end{figure}
 
@@ -224,6 +225,8 @@ Die Struktur des Modells, wie es hier verwendet wird, ist in Abbildung \ref{fig:
 
 \begin{figure}[H]
 	\centering
+	\includegraphics[width = .8\columnwidth]{figures/Modell/kopfformanten.png}
+	\caption{Menschlicher Vokaltrakt}
 	\input{figures/modell/qfm-basic.tex}
 	\caption{Verwendetes Quelle-Filter-Modell}
 	\label{fig:QFM}
@@ -265,12 +268,11 @@ Zur Synthese von Vokallauten wird ein periodisches breitbandiges Anregungssignal
 
 Das Anregungssignal f\"ur die stimmhaften Laute soll den glottalen Luftstrom nachbilden. Dazu wurde eine von Paul Taylor vorgeschlagene Formel benutzt.
 
-
 \begin{figure}[H]
 	\centering
-	\input{figures/Synthese/sourcesignal.tex}
-	\caption{Anregungssignal f\"ur stimmhafte Laute}
-	\label{fig:qfm-vokal}
+	\input{figures/sourcesignal-spektrum.tex}
+	\caption{Spektrum des Anregungssignals}
+	\label{fig:kombination}
 \end{figure}
 
 Beispielhaft ist das Spektrum f\"ur den synthetisierten Vokal /{i}/ in Abbildung \ref*{fig:spektr-synt-i} dargestellt.
@@ -300,12 +302,7 @@ Zur Synthese von Zischlauten wird ein Rauschgenerator als Quelle verwendet. Die 
 
 Bei der Lautkombination werden einzelne Laute mit einem Von-Hann-Fenster gefenstert und ineinander verschoben. Die Ineinanderverschiebung ist in Abbildung \ref{fig:kombination} abgebildet.
 
-\begin{figure}[H]
-	\centering
-	\input{figures/Synthese/alpha1.tex}
-	\caption{\"Uberlappung zweier Von-Hann-Fenster}
-	\label{fig:kombination}
-\end{figure}
+
 
 
 
