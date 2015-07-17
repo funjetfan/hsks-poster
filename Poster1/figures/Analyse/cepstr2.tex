@@ -1,0 +1,17 @@
+\begin{tikzpicture}[auto, thick, node distance=2cm, >=triangle 45]
+	\draw
+	% Block setzen
+	node at (1.0,-0.0)[output, right = -3mm](input) {\textopenbullet} 
+	node at (3.5,-0.0)[block] (real) {\Large $\operatorname{\Re}\left(c \lbrack n \rbrack \right) $}
+	node at (6.5,-0.0)[block] (lift) {\Large $\mathrm{Lifterung}$}
+	node at (9.5,-0.0)[block] (DFT) {\Large $\mathrm{DFT}$}
+	node at (12.5,-0.0)[block] (max) {\Large $\mathrm{Maxima}$}
+	node at (16.5,0)[output, right = -3mm] (output){\textopenbullet};
+	% Blcok verbinden
+	\draw[->](input) -- node {$c \lbrack n \rbrack $}(real);
+	\draw[->](real) -- node {}(lift);
+	\draw[->](lift) -- node {$c_l \lbrack n \rbrack $}(DFT);
+	\draw[->](DFT) -- node {$S\left(s\right)$}(max);
+	\draw[->](max) -- node {$\mathrm{Formanten}$}(output);
+	
+	\end{tikzpicture}

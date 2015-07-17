@@ -1,0 +1,263 @@
+%-------------------------------------------------
+\documentclass[ks,hauptseminar]{daposterifn}
+%-------------------------------------------------
+%* options:
+%* tnt, hf, tk, mns /default: -none-
+%* diplom, master   /default: diplom
+%* extern
+
+%%% LANGUAGE %%%
+%\usepackage[T1]{fontenc}      % correct german hyphenation of word with umlaute
+\usepackage{babel}
+%\usepackage[latin1]{inputenc} % direct use of german umlaute, utf8 encoding
+
+%%% LAYOUT %%%
+%\usepackage[a4paper,top=25mm,left=20mm,right=20mm,bottom=20mm]{geometry} %modify page geometry
+%\pagestyle{plain}             % layout with plain page number
+\parindent 0pt                % no paragraph indentation
+
+%%% GRAPHICS %%%
+\usepackage{graphicx}  % graphical elements
+\usepackage{pstricks}  % postscript drawings
+\usepackage{textcomp}  % additional symbols
+\usepackage{xcolor}    % colored elements, extended package
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{epstopdf}
+
+%%% MATH & SCIENCE %%%
+\usepackage{amsmath}   % math formulae
+\usepackage{amssymb}   % math symbols
+\usepackage{amsfonts}  % additional math fonts
+\usepackage{units}     % setting units typographically correct
+
+%%% CODES %%%
+\usepackage{verbatim}  % verbatim display/commenting pieces of LaTeX code
+\usepackage{listings}  % display of source code listings
+
+%%% BIBLIO %%%
+\usepackage[backend=biber,style=numeric]{biblatex}
+\usepackage[babel,german=quotes]{csquotes}
+\bibliography{literatur.bib}
+
+%%% MISC %%%
+\usepackage{pdfpages}  % include pdfs
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{float}
+%\usepackage{morefloats}
+
+\usepackage{hyperref}  % document navigation with hyperlinks (load last)
+
+
+
+% % % % % % % % % % % % % %
+% % % % %  SETUPS % % % % %
+% % % % % % % % % % % % % %
+\pgfplotsset{compat=newest}
+\pgfplotsset{plot coordinates/math parser=false}
+
+\usetikzlibrary{shapes, arrows, circuits, trees}
+
+\hypersetup{
+	%bookmarks=false,            % show bookmarks bar?
+	%unicode=false,              % non-Latin characters in Acrobat's bookmarks
+	pdftoolbar=true,            % show Acrobat's toolbar?
+	pdfmenubar=true,            % show Acrobat's menu?
+	pdffitwindow=false,         % window fit to page when opened
+	pdfstartview={FitH},        % fits the width of the page to the window
+	pdftitle={},      % title
+	pdfauthor={Karl-Ludwig Besser},     % author
+	pdfsubject={},% subject of the document
+	pdfcreator={Karl-Ludwig Besser}               % creator of the document
+	pdfproducer={Karl-Ludwig Besser},             % producer of the document
+	pdfkeywords={},             % list of keywords
+	pdfnewwindow=true,          % links in new window
+	colorlinks=true,            % false: boxed links; true: colored links
+	linkcolor=black,            % color of internal links
+	citecolor=black,            % color of links to bibliography
+	filecolor=red,              % color of file links
+	urlcolor=blue,              % color of external links
+	breaklinks=true             % break urls
+}
+
+\lstloadlanguages{matlab}
+\lstset{
+	%    language=[ANSI]c        % language of code
+	%    defaultdialect=ANSI  % default dialect of language
+	%    language=    % language of code
+	%    language=        % language of code
+	basicstyle=\footnotesize,          % fontsize for code
+	keywordstyle=\ttfamily\bfseries,   % fontstyle for keywords
+	stringstyle=\ttfamily\color{blue}, % fontstyle for non-keywords and strings
+	commentstyle=\itshape,             % fontstyle for comments
+	extendedchars=true,                % extended (national) characters
+	numbers=left,                      % where to put line-numbers
+	numberstyle=\tiny,                 % fontsize for line-numbers
+	numbersep=10pt,                    % space between numbers and code
+	stepnumber=2,                      % step between numbers
+	showspaces=false,                  % underline spaces within code
+	showstringspaces=false,            % underline spaces within strings
+	showtabs=false,                    % underline tabs within strings
+	tabsize=2,                         % default tab-size in spaces
+	frame=single,                   % frame around code
+	backgroundcolor=\color{bgcol},     % background color (needs color package)
+	rulesepcolor=\color{shcol},        % shadow color (needs color package)
+	captionpos=b,                      % caption-position (bottom)
+	breaklines=true,                   % automatic line breaking
+	breakatwhitespace=false,           % automatic breaks at whitespace
+	breakindent=20pt,                  % indentation of broken lines
+	breakautoindent=true,              % automatic indentation of broken lines
+	morecomment=[l]{//}                % comments in italics (language dependent)
+}
+
+
+% % % % % % % % % % % % % %
+% % % % %  COLORS % % % % %
+% % % % % % % % % % % % % %
+\definecolor{shcol}{gray}{0.80}
+%\definecolor{bgcol}{rgb}{0.99, 0.99, 0.85}
+\definecolor{bgcol}{rgb}{1, 1, 1}
+
+
+% % % % % % % % % % % % % % %
+% % % % %  COMMANDS % % % % %
+% % % % % % % % % % % % % % %
+\newcommand{\dif}{\mathrm{d}}
+
+\tikzset{%
+	block/.style    = {draw, very thick, rectangle, minimum height = 2em, minimum width = 5em},
+	ring/.style     = {draw, very thick, circle, minimum size = 2.5em},
+	elipse/.style   = {draw, very thick, ellipse, minimum height = 1em, minimum width = 5em},
+	sum/.style      = {draw, circle, node distance = 1cm}, % Adder
+	input/.style    = {coordinate}, % Input
+	output/.style   = {coordinate} % Output
+	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny}, small dot/.style={fill=black,circle,scale=0.3}
+}
+
+\tikzstyle{vecArrow} = [thick, decoration={markings,mark=at position
+	1 with {\arrow[very thick]{open triangle 60}}},
+double distance=1.4pt, shorten >= 5.5pt,
+preaction = {decorate},
+postaction = {draw,line width=1.4pt, white,shorten >= 4.5pt}]
+
+\tikzstyle{bigArrow} = [very thick, decoration={markings,mark=at position 1 with {\arrow[very thick]{open triangle 60}}}, double distance=3pt, shorten >= 5.5pt,preaction = {decorate}, postaction = {draw,line width=2pt, white}]
+
+
+% Defining string as labels of certain blocks.
+\newcommand{\suma}{\Large$+$}
+\newcommand{\inte}{$\displaystyle \int$}
+\newcommand{\derv}{\huge$\frac{d}{dt}$}
+\newcommand{\absheadposx}{-1.5}
+\newcommand{\absheadposy}{-17}
+
+%-------------------------------------------------
+% BITTE HIER PARAMETER SETZEN!
+%-------------------------------------------------
+
+\setDAParameter[\LARGE]{Thema}{Synthese von Sprachsignalen}
+\setDAParameter{Student}{Karl-Ludwig Besser, Zhongjiu Li, Franz Marcus Sch\"uffny, Peter Steiner}
+\setDAParameter{BetreuerTUD}{PD Dr.-Ing. Ulrich Kordon~\\ Dipl.-Ing. Steffen K\"urbis}
+\setDAParameter{Hochschullehrer}{Jun.-Prof. Dr.-Ing. Peter Birkholz}
+\setDAParameter{VerteidigungDatum}{14.07.2015}
+
+%-------------------------------------------------
+%-------------------------------------------------
+% BEGINN DES DOKUMENTS
+%-------------------------------------------------
+
+\begin{document}
+
+
+\includeDADetails
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[every node/.style={anchor=south west,inner sep=0pt}, x=1cm, y=1cm,]  
+\node (fig1) at (\absheadposx, \absheadposy)
+{\includegraphics[width = .25\textwidth]{figures/Modell/kopfformanten.eps}}
+node  [text width = 11.5cm] at (-15, -1)(text1) { \large Spektrum des Anregungssignals }
+node  [text width = 11.5cm] at (-15, -1)(text1) { \large Spektrum des Anregungssignals }
+node  [text width = 14cm] at (-0.3, -1)(text2) { \large Spektrum des aufgenommenen Signals }
+node  [text width = 14cm] at (15.75, -1)(text3) { \large Spektrum des synthetisierten Signals }
+node  [text width = 11.5cm] at (-15, -30)(text4) { \large \textbf{Sprachsignalanalyse} 
+	
+	Zur Parametrisierung des verwendeten Quelle-Filter-Modells m\"ussen reale Sprachsignale analysiert werden.
+	
+	Der Schwerpunkt liegt hierbei auf der Bestimmung der Filterparameter. Es werden prim\"ar Bandpassfilter 2. Ordnung eingesetzt. Die drei charakteristischen Parameter sind Mittenfrequenz, Bandbreite und Grundverst\"arkung.
+	
+	Die Mittenfrequenz wird als Formantfrequenz bezeichnet. Um diese zu bestimmen, wurden verschiedene Analysemethoden verwendet. Von der Software Praat wurde der fertig implementierte Burg-Algorithmus bereitgestellt, selbst nachprogrammiert wurde der Cepstrum-Algorithmus. 
+	
+	Dabei wird unter Annahme des Quelle-Filter-Modells eine Trennung von Quellsignal und \"Ubertragungsfunktion des Filters vorgenommen.
+	}
+node  [text width = 11.5cm] at (18, -23)(text5) { \large \textbf{Sprachsignalsynthese} 
+	
+Zur Synthese von Vokallauten wird ein periodisches breitbandiges Anregungssignal als Quelle verwendet. Die Signalformung wird mittels Bandpassfilter in Reihenschaltung realisiert.
+
+Zur Synthese von Zischlauten wird ein Rauschgenerator als Quelle verwendet. Die Signalformung wird mittels Bandpassfilter in Parallelschaltung realisiert.
+
+Bei der Lautkombination werden einzelne Laute mit einem Von-Hann-Fenster gefenstert und ineinander verschoben. Damit erreicht man neben verst\"andlichen Einzellauten auch eine gute Verst\"andlichkeit der ganzen Lautkombination.
+}
+
+node  [text width = 17cm] at (-1, -30)(text6) { \large \textbf{Syntheseergebnisse} 
+	
+	Implementiert wurden folgende Laute: Vokale, Diphtonge (/au/, /ei/, /eu/), stimmlose Frikative (/ch/, /f/, /s/, /sch/), stimmhafte Frikative (/w/), stimmhafte Plosive (/b/, /d/, /g/), stimmlose Plosive (/k/, /t/, /p/), Liquide (/l/, /r/) sowie Nasale (/m/, /n/).
+	
+	Allerdings k\"onnen stimmhafte Plosive nur in Verbindung mit einem darauffolgenden Vokal synthetisiert werden.
+}
+node  [text width = 25cm] at (5, -39)(text7) { \large \textbf{Quelle-Filter-Modell} 
+	
+Das Quelle-Filter-Modell versucht eine Zerlegung von Sprachsignalen in Anregungssignale und Filterstrukturen. Durch geeignete Wahl der Modellparameter soll eine m\"oglichst gute Modellierung des menschlichen Artikulationstrakts erreicht werden. 
+
+}
+node  [text width = 6cm] at (2, -19)(text6) { \large Anregungssignal}
+node  [text width = 6cm] at (1, -7)(text7) { \large Vokaltrakt}
+node  [text width = 6cm] at (11, -13)(text8) { \large Sprachsignal}
+;
+
+
+\draw
+node at (-14, -37.11)[elipse](input) {\Huge {Quelle}} 
+node at (-7, -37)[block] (filter) {\Huge {Filter}}
+node  [text width = 15cm] at (18, -31)(Einleitung) { \includegraphics[width = .75\textwidth]{figures/Einleitung/von-kempelen.png}
+	
+	Von-Kempelen's Sprachautomat};
+
+
+
+\draw [bigArrow](text6) to (5.005, -17);
+\draw[->](text7) -- node {}(6, -9);
+\draw[->](input) -- node {}(filter);
+\draw[->](filter) -- node {\Large Ausgang}(1, -36.31);
+
+
+\begin{scope}[scale = .3, xshift = \absheadposx-1500, yshift = 0]
+\input{figures/Modell/sourcesignal-spektrum.tex}
+\end{scope}
+
+\begin{scope}[scale = .3, xshift = \absheadposx+0, yshift = 0]
+\input{figures/Analyse/i-amplitude.tex}
+\end{scope}
+
+\begin{scope}[scale = .3, xshift = \absheadposx+1500, yshift = 0]
+\input{figures/Synthese/spektrum-i-3.tex}
+\end{scope}
+
+\begin{scope}[scale = .25, xshift = \absheadposx+1280, yshift = \absheadposy-1365]
+\input{figures/Synthese/zeitsignal-i-3.tex}
+\end{scope}
+
+
+\end{tikzpicture}
+
+\end{figure}
+
+
+
+ \vspace*{\fill} 
+\nocite{*}
+\printbibliography
+
+
+
+\end{document}

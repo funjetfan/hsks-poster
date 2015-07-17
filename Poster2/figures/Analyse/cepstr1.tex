@@ -1,0 +1,17 @@
+	\begin{tikzpicture}[auto, thick, node distance=2cm, >=triangle 45]
+	\draw
+	% Block setzen
+	node at (1.0,-0.0)[output, right = -3mm](input) {\textopenbullet} 
+	node at (3.5,-0.0)[block] (wdw) {\Large Fensterung}
+	node at (6.5,-0.0)[block] (DFT) {\Large $\mathrm{DFT}$}
+	node at (9.3,-0.0)[block] (log) {\Large $\log \vert \cdot \vert  $}
+	node at (12.8,-0.0)[block] (IDFT) {\Large $\mathrm{IDFT}$}
+	node at (14.5,0)[output, right = -3mm] (output){\textopenbullet};
+	% Blcok verbinden
+	\draw[->](input) -- node {$y \lbrack n \rbrack $}(wdw);
+	\draw[->](wdw) -- node {$y_w \lbrack n \rbrack $}(DFT);
+	\draw[->](DFT) -- node {$Y\left(s\right)$}(log);
+	\draw[->](log) -- node {$log \vert Y\left(s\right)\vert $}(IDFT);
+	\draw[->](IDFT) -- node {$c \lbrack n \rbrack $}(output);
+	
+	\end{tikzpicture}

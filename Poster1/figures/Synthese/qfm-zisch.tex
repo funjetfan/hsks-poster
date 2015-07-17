@@ -1,0 +1,21 @@
+\begin{tikzpicture}[auto, thick, node distance=2cm, >=triangle 45]
+\draw
+% Block setzen
+node at (0,-2.25)[elipse](input) {Quelle} 
+node at (4.5,-0.25)[block] (f1) {\Large $\mathrm{F_1}$}
+node at (4.5,-2.25)[block] (f2) {\Large $\mathrm{F_2}$}
+node at (4.5,-3.09)[block, draw = none, minimum width = \widthof{Filter n}] () {\Large ~.~}
+node at (4.5,-3.59)[block, draw = none, minimum width = \widthof{Filter n}] () {\Large ~.~}
+node at (4.5,-4.09)[block, draw = none, minimum width = \widthof{Filter n}] () {\Large ~.~}
+node at (4.5,-5.00)[block] (fn) {\Large $\mathrm{F_n}$}
+node at (8,-2.25)[sum] (summe1){\suma};
+% Block verbinden
+\draw[->](input) -- node {}(2.5,-2.25);
+\draw[->](2.5,-2.25) |- node {}(f1);
+\draw[->](2.5,-2.25) -- node {}(f2);
+\draw[->](2.5,-2.25) |- node {}(fn);
+\draw[->](f1) -| node {}(summe1);
+\draw[->](f2) -- node {}(summe1);
+\draw[->](fn) -| node {}(summe1);
+\draw[->](summe1) -- node {Zischlaut}(13,-2.25);
+\end{tikzpicture}

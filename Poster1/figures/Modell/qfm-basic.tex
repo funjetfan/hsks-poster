@@ -1,0 +1,10 @@
+\begin{tikzpicture}[auto, thick, node distance=2cm, >=triangle 45]
+\draw
+% Block setzen
+node at (-2,0)[elipse](input) {\Large Quelle} 
+node at (3.5,0)[block] (filter) {\Large Filter};
+% Block verbinden
+\draw[->](input) -- node {}(filter);
+\draw[->](filter) -- node {\Large Ausgang}(10,0);
+
+\end{tikzpicture}
