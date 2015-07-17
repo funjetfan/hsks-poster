@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.7.6)  17 JUL 2015 15:08
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.7.6)  17 JUL 2015 15:42
 **daposterifn.tex
 (./daposterifn.tex
 LaTeX2e <2015/01/01>
@@ -1875,71 +1875,67 @@ Package pdftex.def Info: figures/Modell/kopfformanten.png used on input line 237
 .
 (pdftex.def)             Requested size: 331.28348pt x 304.34213pt.
  (./figures/Synthese/zeitsignal-i-3.tex)
-(./figures/modell/qfm-basic.tex) (./figures/analyse/i-amplitude.tex
+(./figures/modell/qfm-basic.tex) (./figures/sourcesignal-spektrum.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 154.
+(Font)              <14.4> on input line 10034.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 154.
+(Font)              <12> on input line 10034.
 )
-Overfull \hbox (27.80342pt too wide) in paragraph at lines 155--272
+Overfull \hbox (12.65056pt too wide) in paragraph at lines 10035--271
  [][][] 
  []
 
-(./figures/sourcesignal-spektrum.tex)
-Overfull \hbox (12.65056pt too wide) in paragraph at lines 10035--296
+(./figures/analyse/i-amplitude.tex)
+Overfull \hbox (30.29951pt too wide) in paragraph at lines 155--294
  [][][] 
  []
 
 (./figures/Synthese/spektrum-i-3.tex)
-Overfull \hbox (15.18666pt too wide) in paragraph at lines 7030--305
+Overfull \hbox (15.18666pt too wide) in paragraph at lines 7030--306
  [][][] 
  []
 
-
-Overfull \vbox (8.62059pt too high) has occurred while \output is active []
-
-
-<./figures/logos/Logo-TU_weiss.pdf, id=14, 256.96pt x 75.28125pt>
+<./figures/logos/Logo-TU_weiss.pdf, id=13, 256.96pt x 75.28125pt>
 <use ./figures/logos/Logo-TU_weiss.pdf>
 File: ./figures/logos/Logo-TU_weiss.pdf Graphic file (type pdf)
 
 <use ./figures/logos/Logo-TU_weiss.pdf>
 Package pdftex.def Info: ./figures/logos/Logo-TU_weiss.pdf used on input line 34
-4.
+2.
 (pdftex.def)             Requested size: 373.94691pt x 109.5437pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 344.
+Package xcolor Warning: Incompatible color definition on input line 342.
 
 
-Package xcolor Warning: Incompatible color definition on input line 344.
+Package xcolor Warning: Incompatible color definition on input line 342.
 
-<./figures/logos/Logo-ET_weiss.pdf, id=15, 249.93375pt x 68.255pt>
+<./figures/logos/Logo-ET_weiss.pdf, id=14, 249.93375pt x 68.255pt>
 File: ./figures/logos/Logo-ET_weiss.pdf Graphic file (type pdf)
 
 <use ./figures/logos/Logo-ET_weiss.pdf>
 Package pdftex.def Info: ./figures/logos/Logo-ET_weiss.pdf used on input line 34
-4.
+2.
 (pdftex.def)             Requested size: 237.0391pt x 64.7294pt.
 
-<./figures/logos/KogSys.jpg, id=16, 43.50702pt x 43.50702pt>
+<./figures/logos/KogSys.jpg, id=15, 43.50702pt x 43.50702pt>
 File: ./figures/logos/KogSys.jpg Graphic file (type jpg)
 
 <use ./figures/logos/KogSys.jpg>
-Package pdftex.def Info: ./figures/logos/KogSys.jpg used on input line 344.
+Package pdftex.def Info: ./figures/logos/KogSys.jpg used on input line 342.
 (pdftex.def)             Requested size: 64.73921pt x 64.7294pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 344.
+Package xcolor Warning: Incompatible color definition on input line 342.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 342.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 342.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 342.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 342.
 [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1954,11 +1950,11 @@ Non-PDF special ignored!
 Non-PDF special ignored!<./figures/logos/Logo-TU_weiss.pdf><./figures/Einleitung
 /von-kempelen.png><./figures/Modell/kopfformanten.png><./figures/logos/Logo-ET_w
 eiss.pdf><./figures/logos/KogSys.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
  (./daposterifn.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
 Package rerunfilecheck Info: File `daposterifn.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'daposterifn.run.xml'.
@@ -1968,10 +1964,10 @@ Package logreq Info: Writing requests to 'daposterifn.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  42309 strings out of 494695
- 381506,2848258 words of node,token memory allocated
- 460 words of node memory still in use:
+ 381513,2848258 words of node,token memory allocated
+ 459 words of node memory still in use:
     nodes
-   avail lists: 1:8,2:58,3:60152,4:6842,5:659,6:13325,7:106,8:67,9:2366,10:1866
+   avail lists: 1:8,2:60,3:56715,4:6633,5:768,6:13943,7:106,8:66,9:2277,10:1932
  44231 multiletter control sequences out of 65536+200000
  55 fonts using 1548435 bytes
  61i,27n,91p,1155b,2225s stack positions out of 5000i,500n,10000p,311691b,50000s
@@ -1983,9 +1979,9 @@ lic/lm/lmr17.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri1
 2.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><<C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><<C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on daposterifn.pdf (1 page, 411290 bytes).
+Output written on daposterifn.pdf (1 page, 412360 bytes).
 
-PDF statistics: 75 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 74 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

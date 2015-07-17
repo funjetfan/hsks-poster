@@ -264,20 +264,16 @@ Zur Parametrisierung des in Abbildung \ref{fig:QFM} dargestellten Modells m\"uss
 Der Schwerpunkt liegt hierbei auf der Bestimmung der Filterparameter. Es werden prim\"ar Bandpassfilter 2. Ordnung eingesetzt. Die drei charakteristischen Parameter sind Mittenfrequenz, Bandbreite und Grundverst\"arkung.
 
 Die Mittenfrequenz wird als Formantfrequenz bezeichnet. Um diese zu bestimmen, wurden verschiedene Analysemethoden verwendet. Von der Software Praat wurde der fertig implementierte Burg-Algorithmus bereitgestellt, selbst nachprogrammiert wurde der Cepstrum-Algorithmus. Das dabei gewonnene gegl\"attete Spektrum ist in Abbildung \ref{fig:spektrum} dargestellt.
-{
-	%\setlength{cmd}{len}
+
 \begin{figure}[H]
 	\centering
-	\input{figures/analyse/i-amplitude.tex}
-	\caption{Gegl\"attetes Spektrum des Vokals i}
-	\label{fig:spektrum}
+	\input{figures/sourcesignal-spektrum.tex}
+	\caption{Spektrum des Anregungssignals}
+	\label{fig:kombination}
 \end{figure}
-}
 
 %-------------------------------------------------
 \section*{Synthese}
-
-Zur Synthese von Einzellauten werden verschiedene Quelle-Filter-Modelle verwendet.
 
 \subsection*{Synthetisierbare Einzellaute}
 Implementiert wurden folgende Laute: Vokale, Diphtonge (/au/, /ei/, /eu/), stimmlose Frikative (/ch/, /f/, /s/, /sch/), stimmhafte Frikative (/w/), stimmhafte Plosive (/b/, /d/, /g/), stimmlose Plosive (/k/, /t/, /p/), Liquide (/l/, /r/) sowie Nasale (/m/, /n/).
@@ -290,14 +286,19 @@ Zur Synthese von Vokallauten wird ein periodisches breitbandiges Anregungssignal
 
 Das Anregungssignal f\"ur die stimmhaften Laute soll den glottalen Luftstrom nachbilden. Dazu wurde eine von Paul Taylor vorgeschlagene Formel benutzt.
 
-\begin{figure}[H]
-	\centering
-	\input{figures/sourcesignal-spektrum.tex}
-	\caption{Spektrum des Anregungssignals}
-	\label{fig:kombination}
-\end{figure}
+{
+	%\setlength{cmd}{len}
+	\begin{figure}[H]
+		\centering
+		\input{figures/analyse/i-amplitude.tex}
+		\caption{Gegl\"attetes Spektrum des Vokals i}
+		\label{fig:spektrum}
+	\end{figure}
+}
 
-Beispielhaft ist das Spektrum f\"ur den synthetisierten Vokal /{i}/ in Abbildung \ref*{fig:spektr-synt-i} dargestellt.
+
+
+Beispielhaft ist das Spektrum f\"ur den synthetisierten Vokal /{i}/ in Abbildung \ref*{fig:spektr-synt-i} dargestellt. Es ist zu erkennen, dass die H\"ullkurve des Linienspektrums in etwa mit dem vorher gezeigten gegl\"atteten Spektrum \"ubereinstimmt. Somit ist die Verst\"andlichkeit des Einzellautes gegeben.
 
 \begin{figure}[H]	
 	\centering
@@ -322,10 +323,7 @@ Zur Synthese von Zischlauten wird ein Rauschgenerator als Quelle verwendet. Die 
 %-------------------------------------------------
 \subsection*{Kombination}
 
-Bei der Lautkombination werden einzelne Laute mit einem Von-Hann-Fenster gefenstert und ineinander verschoben. Die Ineinanderverschiebung ist in Abbildung \ref{fig:kombination} abgebildet.
-
-
-
+Bei der Lautkombination werden einzelne Laute mit einem Von-Hann-Fenster gefenstert und ineinander verschoben. Damit erreicht man neben verst\"andlichen Einzellauten auch eine gute Verst\"andlichkeit der ganzen Lautkombination.
 
 
 %-------------------------------------------------
