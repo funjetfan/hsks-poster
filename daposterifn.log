@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.7.6)  16 JUL 2015 19:54
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.7.6)  17 JUL 2015 11:43
 **daposterifn.tex
 (./daposterifn.tex
 LaTeX2e <2015/01/01>
@@ -1704,27 +1704,27 @@ Package csquotes Info: ... found 'babel' package.
 (./daposterifn.aux)
 \openout1 = daposterifn.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 182.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 182.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 188.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 188.
  ("C:/Program Files (x86)/MiKTeX 2.9/tex/latex/base/ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 182.
-LaTeX Font Info:    ... okay on input line 182.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 182.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 188.
  ("C:/Program Files (x86)/MiKTeX 2.9/tex/latex/lm/ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1782,7 +1782,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 182.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 188.
 
  ("C:/Program Files (x86)/MiKTeX 2.9/tex/latex/lm/ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1801,10 +1801,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'daposterifn.bbl' found.
 (./daposterifn.bbl)
-Package biblatex Info: Reference section=0 on input line 182.
-Package biblatex Info: Reference segment=0 on input line 182.
+Package biblatex Info: Reference section=0 on input line 188.
+Package biblatex Info: Reference segment=0 on input line 188.
 \AtBeginShipoutBox=\box284
-Package hyperref Info: Link coloring ON on input line 182.
+Package hyperref Info: Link coloring ON on input line 188.
 
 ("C:/Program Files (x86)/MiKTeX 2.9/tex/latex/hyperref/nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1814,48 +1814,48 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count450
 )
-LaTeX Info: Redefining \ref on input line 182.
-LaTeX Info: Redefining \pageref on input line 182.
-LaTeX Info: Redefining \nameref on input line 182.
+LaTeX Info: Redefining \ref on input line 188.
+LaTeX Info: Redefining \pageref on input line 188.
+LaTeX Info: Redefining \nameref on input line 188.
 
 (./daposterifn.out) (./daposterifn.out)
 \@outlinefile=\write5
 
 \openout5 = daposterifn.out
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 185.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 191.
 
 ("C:/Program Files (x86)/MiKTeX 2.9/tex/latex/lm/omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 185.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 191.
 
 
 ("C:/Program Files (x86)/MiKTeX 2.9/tex/latex/lm/omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 185.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 191.
 
 
 ("C:/Program Files (x86)/MiKTeX 2.9/tex/latex/lm/omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 185.
+(Font)              <24.88> on input line 191.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 185.
+(Font)              <20.74> on input line 191.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 185.
-LaTeX Font Info:    Try loading font information for U+msa on input line 185.
+(Font)              <17.28> on input line 191.
+LaTeX Font Info:    Try loading font information for U+msa on input line 191.
 
 ("C:/Program Files (x86)/MiKTeX 2.9/tex/latex/amsfonts/umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 185.
+LaTeX Font Info:    Try loading font information for U+msb on input line 191.
 
 ("C:/Program Files (x86)/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (85.14871pt too wide) in paragraph at lines 185--185
+Overfull \hbox (85.14871pt too wide) in paragraph at lines 191--191
  [][][] 
  []
 
@@ -1864,16 +1864,16 @@ File: figures/Einleitung/kratzenstein.png Graphic file (type png)
 
 <use figures/Einleitung/kratzenstein.png>
 Package pdftex.def Info: figures/Einleitung/kratzenstein.png used on input line 
-209.
+215.
 (pdftex.def)             Requested size: 372.7311pt x 223.02884pt.
 
 <figures/Modell/kopfformanten.png, id=10, 382.42876pt x 351.3125pt>
 File: figures/Modell/kopfformanten.png Graphic file (type png)
 
 <use figures/Modell/kopfformanten.png>
-Package pdftex.def Info: figures/Modell/kopfformanten.png used on input line 228
+Package pdftex.def Info: figures/Modell/kopfformanten.png used on input line 237
 .
-(pdftex.def)             Requested size: 378.61278pt x 347.82188pt.
+(pdftex.def)             Requested size: 331.28348pt x 304.34213pt.
  (./figures/modell/qfm-basic.tex)
 (./figures/analyse/i-amplitude.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1881,22 +1881,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 154.
 )
-Overfull \hbox (27.80342pt too wide) in paragraph at lines 155--250
+Overfull \hbox (27.80342pt too wide) in paragraph at lines 155--1617
  [][][] 
  []
 
 (./figures/sourcesignal-spektrum.tex)
-Overfull \hbox (12.65056pt too wide) in paragraph at lines 10035--274
+Overfull \hbox (12.65056pt too wide) in paragraph at lines 10035--1641
  [][][] 
  []
 
 (./figures/Synthese/spektrum-i-3.tex)
-Overfull \hbox (15.18666pt too wide) in paragraph at lines 7030--283
+Overfull \hbox (15.18666pt too wide) in paragraph at lines 7030--1650
  [][][] 
  []
-
-
-Overfull \vbox (23.07787pt too high) has occurred while \output is active []
 
 
 Overfull \vbox (8.62059pt too high) has occurred while \output is active []
@@ -1907,42 +1904,42 @@ Overfull \vbox (8.62059pt too high) has occurred while \output is active []
 File: ./figures/logos/Logo-TU_weiss.pdf Graphic file (type pdf)
 
 <use ./figures/logos/Logo-TU_weiss.pdf>
-Package pdftex.def Info: ./figures/logos/Logo-TU_weiss.pdf used on input line 32
-0.
+Package pdftex.def Info: ./figures/logos/Logo-TU_weiss.pdf used on input line 16
+89.
 (pdftex.def)             Requested size: 373.94691pt x 109.5437pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 320.
+Package xcolor Warning: Incompatible color definition on input line 1689.
 
 
-Package xcolor Warning: Incompatible color definition on input line 320.
+Package xcolor Warning: Incompatible color definition on input line 1689.
 
 <./figures/logos/Logo-ET_weiss.pdf, id=15, 249.93375pt x 68.255pt>
 File: ./figures/logos/Logo-ET_weiss.pdf Graphic file (type pdf)
 
 <use ./figures/logos/Logo-ET_weiss.pdf>
-Package pdftex.def Info: ./figures/logos/Logo-ET_weiss.pdf used on input line 32
-0.
+Package pdftex.def Info: ./figures/logos/Logo-ET_weiss.pdf used on input line 16
+89.
 (pdftex.def)             Requested size: 237.0391pt x 64.7294pt.
 
 <./figures/logos/KogSys.jpg, id=16, 43.50702pt x 43.50702pt>
 File: ./figures/logos/KogSys.jpg Graphic file (type jpg)
 
 <use ./figures/logos/KogSys.jpg>
-Package pdftex.def Info: ./figures/logos/KogSys.jpg used on input line 320.
+Package pdftex.def Info: ./figures/logos/KogSys.jpg used on input line 1689.
 (pdftex.def)             Requested size: 64.73921pt x 64.7294pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 320.
+Package xcolor Warning: Incompatible color definition on input line 1689.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 1689.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 1689.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 1689.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 1689.
 [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1956,47 +1953,12 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!<./figures/logos/Logo-TU_weiss.pdf><./figures/Einleitung
 /kratzenstein.png><./figures/Modell/kopfformanten.png><./figures/logos/Logo-ET_w
-eiss.pdf><./figures/logos/KogSys.jpg>] <use ./figures/logos/Logo-TU_weiss.pdf>
-File: ./figures/logos/Logo-TU_weiss.pdf Graphic file (type pdf)
-
-<use ./figures/logos/Logo-TU_weiss.pdf>
-Package pdftex.def Info: ./figures/logos/Logo-TU_weiss.pdf used on input line 32
-2.
-(pdftex.def)             Requested size: 373.94691pt x 109.5437pt.
-
-
-Package xcolor Warning: Incompatible color definition on input line 322.
-
-
-Package xcolor Warning: Incompatible color definition on input line 322.
-
-File: ./figures/logos/Logo-ET_weiss.pdf Graphic file (type pdf)
-<use ./figures/logos/Logo-ET_weiss.pdf>
-Package pdftex.def Info: ./figures/logos/Logo-ET_weiss.pdf used on input line 32
-2.
-(pdftex.def)             Requested size: 237.0391pt x 64.7294pt.
-File: ./figures/logos/KogSys.jpg Graphic file (type jpg)
- <use ./figures/logos/KogSys.jpg>
-Package pdftex.def Info: ./figures/logos/KogSys.jpg used on input line 322.
-(pdftex.def)             Requested size: 64.73921pt x 64.7294pt.
-
-
-Package xcolor Warning: Incompatible color definition on input line 322.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 322.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 322.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 322.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 322.
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 322.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 322.
+eiss.pdf><./figures/logos/KogSys.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1689.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1689.
  (./daposterifn.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 322.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 322.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1689.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1689.
 Package rerunfilecheck Info: File `daposterifn.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'daposterifn.run.xml'.
@@ -2005,14 +1967,14 @@ Package logreq Info: Writing requests to 'daposterifn.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42234 strings out of 494695
- 381506,2848258 words of node,token memory allocated
- 467 words of node memory still in use:
+ 42300 strings out of 494695
+ 381516,2848258 words of node,token memory allocated
+ 460 words of node memory still in use:
     nodes
-   avail lists: 1:8,2:53,3:55662,4:6798,5:744,6:15006,7:128,8:75,9:2256,10:2119
- 44126 multiletter control sequences out of 65536+200000
- 54 fonts using 1520507 bytes
- 61i,27n,84p,1155b,2062s stack positions out of 5000i,500n,10000p,311691b,50000s
+   avail lists: 1:8,2:61,3:60152,4:6838,5:659,6:13325,7:106,8:67,9:2366,10:1866
+ 44231 multiletter control sequences out of 65536+200000
+ 55 fonts using 1548435 bytes
+ 61i,27n,91p,1155b,2222s stack positions out of 5000i,500n,10000p,311691b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program File
 s (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKT
 eX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<<C:/Program Files (x86)/MiKTeX 2.9/font
@@ -2021,9 +1983,9 @@ lic/lm/lmr17.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri1
 2.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><<C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><<C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on daposterifn.pdf (2 pages, 401367 bytes).
+Output written on daposterifn.pdf (1 page, 411289 bytes).
 
-PDF statistics: 79 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 131072)
+PDF statistics: 75 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
