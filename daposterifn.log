@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.7.6)  17 JUL 2015 15:00
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.7.6)  17 JUL 2015 15:08
 **daposterifn.tex
 (./daposterifn.tex
 LaTeX2e <2015/01/01>
@@ -1968,10 +1968,10 @@ Package logreq Info: Writing requests to 'daposterifn.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  42309 strings out of 494695
- 381504,2848258 words of node,token memory allocated
+ 381506,2848258 words of node,token memory allocated
  460 words of node memory still in use:
     nodes
-   avail lists: 1:10,2:58,3:60152,4:6841,5:659,6:13325,7:106,8:67,9:2366,10:1866
+   avail lists: 1:8,2:58,3:60152,4:6842,5:659,6:13325,7:106,8:67,9:2366,10:1866
  44231 multiletter control sequences out of 65536+200000
  55 fonts using 1548435 bytes
  61i,27n,91p,1155b,2225s stack positions out of 5000i,500n,10000p,311691b,50000s
@@ -1983,7 +1983,7 @@ lic/lm/lmr17.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri1
 2.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><<C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><<C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on daposterifn.pdf (1 page, 411289 bytes).
+Output written on daposterifn.pdf (1 page, 411290 bytes).
 
 PDF statistics: 75 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 131072)
