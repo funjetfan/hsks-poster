@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.7.6)  20 JUL 2015 13:28
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2015.7.6)  20 JUL 2015 22:13
 **poster1.tex
 (./poster1.tex
 LaTeX2e <2015/01/01>
@@ -1965,10 +1965,10 @@ Package logreq Info: Writing requests to 'poster1.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  42313 strings out of 494695
- 305221,2848258 words of node,token memory allocated
+ 305204,2848258 words of node,token memory allocated
  459 words of node memory still in use:
     nodes
-   avail lists: 1:8,2:59,3:49320,4:6247,5:719,6:13294,7:101,8:69,9:2081,10:1814
+   avail lists: 1:8,2:60,3:49320,4:6250,5:715,6:13255,7:101,8:69,9:2079,10:1810
  44234 multiletter control sequences out of 65536+200000
  55 fonts using 1548435 bytes
  61i,27n,91p,1151b,2225s stack positions out of 5000i,500n,10000p,311687b,50000s
@@ -1980,7 +1980,7 @@ lic/lm/lmr17.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri1
 2.pfb><<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><<C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><<C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on poster1.pdf (1 page, 414870 bytes).
+Output written on poster1.pdf (1 page, 414605 bytes).
 
 PDF statistics: 78 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 131072)
