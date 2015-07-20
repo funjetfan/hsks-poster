@@ -19,6 +19,27 @@
 
 \refsection{0}
   \sortlist{nty}{nty}
+    \entry{klatt1980software}{article}{}
+      \name{author}{1}{}{%
+        {{hash=74c1cfd47b207b6230c7cbde4d314403}{Klatt}{K\bibinitperiod}{Dennis\bibnamedelima H}{D\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Acoustical Society of America}%
+      }
+      \strng{namehash}{74c1cfd47b207b6230c7cbde4d314403}
+      \strng{fullhash}{74c1cfd47b207b6230c7cbde4d314403}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{the Journal of the Acoustical Society of America}
+      \field{number}{3}
+      \field{title}{Software for a cascade/parallel formant synthesizer}
+      \field{volume}{67}
+      \field{year}{1980}
+      \field{pages}{971\bibrangedash 995}
+      \range{pages}{25}
+    \endentry
     \entry{lemmetty1999review}{article}{}
       \name{author}{1}{}{%
         {{hash=87b3b2cbc637ed9c94f0ec932e299e25}{Lemmetty}{L\bibinitperiod}{Sami}{S\bibinitperiod}{}{}{}{}}%

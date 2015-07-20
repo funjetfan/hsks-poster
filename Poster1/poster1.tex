@@ -217,7 +217,7 @@ Mit dieser Thematik besch\"aftigten sich Forscher schon seit mehreren Jahrhunder
 	\label{fig:von-kempelen}
 \end{figure}
 
-Weitere Meilensteine waren die Entwicklung elektronischer Filter sowie der Einsatz moderner Computertechnik. 
+Nach anf\"anglichen mechanischen Maschinen wie in Abbildung \ref*{fig:von-kempelen} gab es dank der Entwicklung elektronischer Filter sowie des Einsatzes moderner Computertechnik neue Meilensteine im Bereich der Sprachsynthese. 
 
 Heutzutage kommen Systeme zur Sprachsynthese zum Beispiel in Navigationsger\"aten und Smartphones zum Einsatz.
 
@@ -265,38 +265,40 @@ Der Schwerpunkt liegt hierbei auf der Bestimmung der Filterparameter. Es werden 
 
 Die Mittenfrequenz wird als Formantfrequenz bezeichnet. Um diese zu bestimmen, wurden verschiedene Analysemethoden verwendet. Von der Software Praat wurde der fertig implementierte Burg-Algorithmus bereitgestellt, selbst nachprogrammiert wurde der Cepstrum-Algorithmus. Das dabei gewonnene gegl\"attete Spektrum ist in Abbildung \ref{fig:spektrum} dargestellt.
 
-\begin{figure}[H]
-	\centering
-	\input{figures/sourcesignal-spektrum.tex}
-	\caption{Spektrum des Anregungssignals}
-	\label{fig:kombination}
-\end{figure}
-
-%-------------------------------------------------
-\section*{Synthese}
-
-\subsection*{Synthetisierbare Einzellaute}
-Implementiert wurden folgende Laute: Vokale, Diphtonge (/au/, /ei/, /eu/), stimmlose Frikative (/ch/, /f/, /s/, /sch/), stimmhafte Frikative (/w/), stimmhafte Plosive (/b/, /d/, /g/), stimmlose Plosive (/k/, /t/, /p/), Liquide (/l/, /r/) sowie Nasale (/m/, /n/).
-
-Allerdings k\"onnen stimmhafte Plosive nur in Verbindung mit einem darauffolgenden Vokal synthetisiert werden.
-
-\subsection*{Vokale}
-Zur Synthese von Vokallauten wird ein periodisches breitbandiges Anregungssignal als Quelle verwendet. Die Signalformung wird mittels Bandpassfilter in Reihenschaltung realisiert.
-
-
-Das Anregungssignal f\"ur die stimmhaften Laute soll den glottalen Luftstrom nachbilden. Dazu wurde eine von Paul Taylor vorgeschlagene Formel benutzt.
-
-{
-	%\setlength{cmd}{len}
 	\begin{figure}[H]
 		\centering
 		\input{figures/analyse/i-amplitude.tex}
 		\caption{Gegl\"attetes Spektrum des Vokals i}
 		\label{fig:spektrum}
 	\end{figure}
+
+%-------------------------------------------------
+\section*{Synthese}
+
+\subsection*{Synthetisierbare Einzellaute}
+Implementiert wurden folgende Laute: Vokale, Diphtonge (/au/, /ei/, /eu/), stimmlose Frikative (/ch/, /f/, /s/, /sch/), stimmhafte Frikative (/w/), stimmhafte Plosive (/b/, /d/, /g/), stimmlose Plosive (/k/, /t/, /p/), Liquide (/l/, /r/) sowie Nasale (/m/, /n/).
+Allerdings k\"onnen stimmhafte Plosive nur in Verbindung mit einem darauffolgenden Vokal synthetisiert werden.
+
+\subsection*{Vokale}
+Zur Synthese von Vokallauten wird ein periodisches breitbandiges Anregungssignal als Quelle verwendet. Die Signalformung wird mittels Bandpassfilter in Reihenschaltung realisiert.
+
+
+Das Anregungssignal f\"ur die stimmhaften Laute soll den glottalen Luftstrom nachbilden. Dazu wurde eine von Paul Taylor vorgeschlagene Formel benutzt. \cite[S. 331]{TaylorTTS}
+
+{
+	
+\begin{figure}[H]
+	\centering
+	\input{figures/sourcesignal-spektrum.tex}
+	\caption{Spektrum des Anregungssignals}
+	\label{fig:sourcesignal}
+\end{figure}
+
+	
+	%\setlength{cmd}{len}
 }
 
-
+Das Spektrum des Anregungssignals ist in Abbildung \ref{fig:sourcesignal} abgebildet.
 
 Beispielhaft ist das Spektrum f\"ur den synthetisierten Vokal /{i}/ in Abbildung \ref*{fig:spektr-synt-i} dargestellt. Es ist zu erkennen, dass die H\"ullkurve des Linienspektrums in etwa mit dem vorher gezeigten gegl\"atteten Spektrum \"ubereinstimmt. Somit ist die Verst\"andlichkeit des Einzellautes gegeben.
 
@@ -310,7 +312,7 @@ Beispielhaft ist das Spektrum f\"ur den synthetisierten Vokal /{i}/ in Abbildung
 %-------------------------------------------------
 \subsection*{Frikative}
 
-Zur Synthese von Zischlauten wird ein Rauschgenerator als Quelle verwendet. Die Signalformung wird mittels Bandpassfilter in Parallelschaltung realisiert. %Eine Filterstruktur nach Abbildung \ref{fig:qfm-zisch} wird zur Synthese von Zischlauten verwendet.
+Zur Synthese von Zischlauten wird ein Rauschgenerator als Quelle verwendet. Die Signalformung wird nach Klatt mittels Bandpassfilter in Parallelschaltung realisiert. \cite{klatt1980software} %Eine Filterstruktur nach Abbildung \ref{fig:qfm-zisch} wird zur Synthese von Zischlauten verwendet.
 
 %\begin{figure}[H]
 %	\centering
